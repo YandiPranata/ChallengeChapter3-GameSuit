@@ -1,13 +1,9 @@
 package GameSuit
 
 fun main() {
-    println(
-        """terminal:~terminal$
-        |==========================
-        |GAME SUIT TERMINAL VERSION
-        |==========================
-    """.trimMargin()
-    )
+    val head = Proses ()
+    head.heads()
+
     print("1. Masukkan Pemain 1 : ")
     val Pemain1: String = readLine()!!
     print("2. Masukkan Pemain 2 : ")
@@ -17,6 +13,7 @@ fun main() {
 
     if (Pemain1!!.toLowerCase().equals(Pemain2.toLowerCase())) {
         println("""
+            
             Hasil:
             DRAW !""".trimIndent())
     } else if (Pemain1.toLowerCase().equals("batu")) {
@@ -82,4 +79,4 @@ fun hasil (status: Boolean) {
                 Pemain 2 MENANG!!""".trimIndent())
     }
 }
-}
+
