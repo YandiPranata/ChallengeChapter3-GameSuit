@@ -1,6 +1,6 @@
 package GameSuit
 
-class Proses {
+internal class Proses : Player (pemain1Param = "",pemain2Param = ""){
     var headname: String = ""
 
     fun heads() {

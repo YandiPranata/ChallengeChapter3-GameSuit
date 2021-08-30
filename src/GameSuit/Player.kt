@@ -1,7 +1,8 @@
 package GameSuit
 
-class Player (val nama: String = "") {
-    val Pemain1: String = ""
-    val Pemain2: String = ""
+abstract class Player (pemain1Param: String, pemain2Param: String) {
+
+    var pemain1: String = pemain1Param
+    var pemain2: String = pemain2Param
 
 }
